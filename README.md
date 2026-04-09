@@ -42,6 +42,22 @@
 - 支持Excel格式导出
 - 方便商家定期复盘
 
+## 扩展功能
+
+### 销售预测
+- 基于历史数据预测未来销售趋势
+- 帮助商家提前做好库存准备
+
+### 商品关联分析
+- 发现经常一起购买的商品组合
+- 优化套餐搭配和推荐策略
+
+### 客户分群
+- 根据消费行为对客户进行分群
+- 实现精准营销
+
+**说明**：这些功能为系统扩展功能，可根据需求进一步开发
+
 ## 技术栈
 
 ### 核心框架
@@ -145,21 +161,26 @@ breakfast/
 git clone [项目地址]
 cd breakfast
 
-# 2. 安装依赖
+# 2. 创建虚拟环境
+python -m venv venv
+
+# 3. 激活虚拟环境
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# 4. 安装依赖
 pip install -r requirements.txt
 
-# 3. 配置环境变量
-# 创建.env文件，并填写数据库配置
-# DB_HOST=localhost
-# DB_PORT=3306
-# DB_USER=root
-# DB_PASSWORD=your_password
-# DB_NAME=breakfast_system
+# 5. 配置环境变量
+# 复制.env.example为.env，并填写数据库配置
+cp .env.example .env
 
-# 4. 初始化数据库
+# 6. 初始化数据库
 python seed_data.py
 
-# 5. 运行Dash应用
+# 7. 运行Dash应用
 python dash_app.py
 ```
 

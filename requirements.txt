@@ -1,5 +1,3 @@
-fastapi
-uvicorn
 pandas
 plotly
 dash
@@ -7,8 +5,5 @@ mysql-connector-python
 pymysql
 sqlalchemy
 scikit-learn
-fpdf
-psutil
-pyjwt
 openpyxl
 python-dotenv
